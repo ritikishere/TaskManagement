@@ -51,22 +51,22 @@ const submitHandler = (e) => {
             <div className=''>
                  <h3 className='text-white'>Task Title</h3>                
                 <input value={taskTitle} onChange={(e)=> {settaskTitle(e.target.value)}}
-                className='bg-transparent text-white placeholder:text-blue-200 border-2 border-sky-400 mt-' type="text" placeholder='Ener Task Title'/>
-                <h3 className='text-white'>Date</h3>
+                className='bg-transparent text-white placeholder:text-gray-400 border-2 border-sky-400 ' type="text" placeholder='Ener Task Title'/> 
+                <h3 className='text-white mt-3'>Date</h3>
                 <input value={taskDate} onChange={(e)=> {settaskDate(e.target.value)}}
-                className='bg-transparent text-white placeholder:text-blue-200 border-2 border-sky-400 mt-' type="date" placeholder=''/>
-                <h3 className='text-white'>Assign to</h3>
+                className='bg-transparent text-white  placeholder:text-gray-400 border-2 border-sky-400 ' type="date" placeholder=''/>
+                <h3 className='text-white mt-3'>Assign to</h3>
                 <input value={name} onChange={(e)=> {setname(e.target.value)}}
-                className='bg-transparent text-white placeholder:text-blue-200 border-2 border-sky-400 mt-' type="text" placeholder='Employee name'/>
-                <h3 className='text-white'>Category</h3>
+                className='bg-transparent text-white  placeholder:text-gray-400 border-2 border-sky-400 ' type="text" placeholder='Employee name'/>
+                <h3 className='text-white mt-3'>Category</h3>
                 <input value={category} onChange={(e)=> {setcategory(e.target.value)}}
-                className='bg-transparent text-white placeholder:text-blue-200 border-2 border-sky-400 mt-' type="text" placeholder='division,dev etc'/>
+                className='bg-transparent text-white  placeholder:text-gray-400 border-2 border-sky-400 ' type="text" placeholder='division,dev etc'/>
             </div>
             <div className='flex flex-col '>
                 <h3 className=' text-white'>Description</h3>
                 <input value={taskDescription} onChange={(e)=> {settaskDescription(e.target.value)}}
                 className='h-40 w-80 bg-transparent text-white border-2 border-emerald-600mt-' type="text" />
-                <button className='w-80 text-white bg-blue-600 mt-3 rounded-sm py-2'>Creat Task</button>
+                <button className='w-80 text-white bg-blue-600 hover:bg-blue-500 mt-3 rounded-sm py-2'>Creat Task</button>
             </div>
         </form>
     </div>
@@ -76,4 +76,3 @@ const submitHandler = (e) => {
 export default CreatTask
 
 
-Authprovider

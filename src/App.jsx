@@ -40,10 +40,10 @@ const App = () => {
 
 
   return (
-    <>
+    <div className='bg-gray-800 h-screen'>
       {!user ? <Auth handleLogin={handleLogin} /> : ''}
       {user == 'admin' ? <Admindash changeUser={setUser} /> : (user == 'employee' ? <Employeedash changeUser={setUser} data={loggedInUserData} /> : null) }
-    </>
+    </div>
   )
 }
 
